@@ -91,7 +91,8 @@ On 2026-11-09 the local Release suite was executed, and a live headless Selenium
 verified First Name=Naman, Gender=Male, State=India with exit code 0.
 Results are in ignored artifacts/test-results and timestamped run logs.
 Re-run before the interview: the public website can change.
-GitHub CI is configured but has not been executed remotely.
+GitHub Actions passed on Ubuntu on 2026-11-09: all 9 fixture tests passed.
+Validation run: https://github.com/namankanwar11/cloudqa-internship/actions/runs/42616630711
 
 ## Five-minute interview demonstration
 
@@ -114,16 +115,19 @@ Nested discovery/action waits can exceed one nominal timeout. Verification check
 not server persistence. Chrome profiles remain in TEMP and may be removed after sessions end.
 Installed host binaries/Chrome already reside on C; project, local SDK, dependency caches,
 temporary profiles and build outputs are on D.
-No GitHub repository, remote CI result or cross-platform validation is claimed.
+The fixture suite has passed on Windows locally and Ubuntu in GitHub Actions. Live-site validation was performed on Windows.
 
-## Publish
+## GitHub repository
 
-An initialized local Git repository is ready for review. Create an empty GitHub repository:
+https://github.com/namankanwar11/cloudqa-internship
+
+The repository is private. Give reviewers access or make it public if required by the assignment.
+Pushes and pull requests trigger the browser test workflow; TRX results are uploaded as artifacts.
+
+To publish future changes:
 
 ~~~powershell
 git add .
-git commit -m "Implement resilient CloudQA automation and fixture tests"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/cloudqa-internship.git
-git push -u origin main
+git commit -m "Describe your change"
+git push
 ~~~
