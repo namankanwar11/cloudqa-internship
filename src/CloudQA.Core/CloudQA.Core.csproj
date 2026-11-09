@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><ItemGroup><PackageReference Include="Selenium.WebDriver" Version="4.52.0"/><PackageReference Include="Selenium.Support" Version="4.52.0"/></ItemGroup><ItemGroup><EmbeddedResource Include="Discovery.js"/></ItemGroup></Project>
